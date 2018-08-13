@@ -1,0 +1,13 @@
+.body{
+
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 650px) {
+
+	.body{
+
+        margin-top: 50px;
+    }
+
+	}

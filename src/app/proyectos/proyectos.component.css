@@ -1,0 +1,52 @@
+#divpadre{
+    width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+
+/*border: 3px solid rgb(173, 12, 47); */
+background-color: rgb(255, 255, 255);
+gap: 10px;
+
+}
+
+#divhijos{
+    grid-column-gap: 100px;
+    grid-row-gap: 1000Px;
+    padding: 40px 40px;
+    border: rgb(189, 230, 176) 5px solid;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 4px 7px #03a9eb7a;
+
+}
+
+img{
+width: 300px;
+height: 100px;
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+    #divpadrecarousel{
+        width: 350px;
+        margin: auto;
+        
+        }
+
+    #divpadre{
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+    background-color: rgb(255, 255, 255);
+    }
+    imgp{
+        width: 300px;
+        height: 100px;
+    }
+    }
+    
