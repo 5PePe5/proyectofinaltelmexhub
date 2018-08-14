@@ -6,6 +6,7 @@
 	margin:0px;
     position: fixed;
     z-index: 7000;
+;
   }
     #maestro{
         border-radius: 4%;
@@ -171,7 +172,7 @@
   /*# sourceMappingURL=estilos.css.map */
   
   @keyframes animatetop {
-    from {top: -30px; opacity: 0}
+    from {top: -6000px; opacity: 0}
     to {top: 0; opacity: 1}
 }
 

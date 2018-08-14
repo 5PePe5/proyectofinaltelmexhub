@@ -86,13 +86,10 @@ border-bottom: rgb(0, 255, 13) 2px solid
 }
 
 
-
-    
-
 /* Animacion  cuando abre modal*/
 @keyframes animatetop {
-    from {top: -30px; opacity: 0}
-    to {top: 0; opacity: 1}
+    from {top: -500px; opacity: 0}
+    to {top: 0; opacity: 0}
 }
 
 @media screen and (max-width: 600px) {

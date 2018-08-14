@@ -5,9 +5,11 @@
 
 <div id="divpadre">
     <div  *ngFor="let post of posts" id="divhijos">
+            <h5>{{post.name}}</h5>
         <a href=""><img src="https://picsum.photos/200" alt=""></a>
-        <h5>{{post.name}}</h5>
+        
         <p>{{post.body}}</p>
+        <a href={{post.poyectoid}}>Quiero donar</a>
         </div>  
     </div>
   

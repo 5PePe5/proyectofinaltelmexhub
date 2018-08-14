@@ -8,15 +8,15 @@ text-align: justify;
 
 #displayiconos{
   
-    margin-top: 1px;
     position: fixed;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
     z-index: 6000;
-    left: 20px;
-    overflow: hidden;
+    left: 10px;
+    margin-top: 30px;
+    
     
 
 
@@ -37,10 +37,16 @@ border-radius: 40px;
 
 }
 
-
-img{
+#imgquienes{
     box-shadow: 4px 5px rgba(0, 0, 0, 0.267);
 width: 100%;
+height: 300px;
+}
+
+#divlinea{
+    width: 2px;
+    border: 1px solid black;
+    margin-left: 17px;
 }
 
 
