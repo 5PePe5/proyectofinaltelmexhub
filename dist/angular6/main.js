@@ -1001,7 +1001,7 @@ module.exports = "#divpadre{\n    width: 800px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n        <p>{{post.body}}</p>\n        <a href={{post.poyectoid}}>Quiero donar a este proyecto</a>\n        </div>  \n    </div>\n  "
+module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n        <p>{{post.body}}</p>\n        <a href={{post.poyectoid}}>Quiero donar</a>\n        </div>  \n    </div>\n  "
 
 /***/ }),
 
@@ -1241,7 +1241,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/compuaztec/proyectofinaltelmexhub/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/telmexhub/proyectofinaltelmexhub/src/main.ts */"./src/main.ts");
 
 
 /***/ })
