@@ -19,6 +19,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { ProyecComponent } from './proyec/proyec.component';
 import {DataService}from './data.service';
 import {HttpClientModule} from '@angular/common/http';
+import { EmployeeComponent } from './employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import {HttpClientModule} from '@angular/common/http';
     LoginComponent,
     BarraflotanteComponent,
     FormularioComponent,
-    ProyecComponent
+    ProyecComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,

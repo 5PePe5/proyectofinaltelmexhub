@@ -12,7 +12,7 @@ export class DataService {
 console.log("console funcionando")
    }
    getData(){
-     return this.httpclient.get<post[]>('http://pepe.sytes.net:3000/personas')
+     return this.httpclient.get<post[]>('http://localhost:3000/proyectos')
 
 
    }
