@@ -6,6 +6,7 @@ export class Employee {
         this.position = position;
         this.office = office;
         this.salary = salary;
+      
     }
 
     _id: string;
