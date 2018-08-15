@@ -9,7 +9,7 @@ import {ComodonarComponent} from './comodonar/comodonar.component';
 import {ContactoComponent} from './contacto/contacto.component';
 import {LoginComponent} from './login/login.component';
 import {RegistroComponent} from './registro/registro.component'
-
+import {EmployeeComponent} from './employee/employee.component'
 
 const routes: Routes = [
   {
@@ -47,6 +47,12 @@ const routes: Routes = [
       path: 'login',
       component: LoginComponent
       },
+      {
+        path: 'employee',
+        component: EmployeeComponent
+        },
+
+      
 
   { path: '', redirectTo: '/inicio', pathMatch: 'full' }
 ]
