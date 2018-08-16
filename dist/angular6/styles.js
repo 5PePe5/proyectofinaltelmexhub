@@ -48,7 +48,7 @@ module.exports = "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n * Copyr
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".body{\n\n    margin-top: 60px;\n}\n\n@media screen and (max-width: 650px) {\n\n\t.body{\n\n        margin-top: 50px;\n    }\n\n\t}\n"
+module.exports = ".body{\n\n    margin-top: 60px;\n}\n\n@media screen and (max-width: 900px) {\n\n\t.body{\n\n        margin-top: 47px;\n    }\n\n\t}\n"
 
 /***/ }),
 

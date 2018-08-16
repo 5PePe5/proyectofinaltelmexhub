@@ -43,12 +43,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contacto_contacto_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contacto/contacto.component */ "./src/app/contacto/contacto.component.ts");
 /* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 /* harmony import */ var _registro_registro_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./registro/registro.component */ "./src/app/registro/registro.component.ts");
+/* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -92,6 +94,10 @@ var routes = [
         path: 'login',
         component: _login_login_component__WEBPACK_IMPORTED_MODULE_8__["LoginComponent"]
     },
+    {
+        path: 'employee',
+        component: _employee_employee_component__WEBPACK_IMPORTED_MODULE_10__["EmployeeComponent"]
+    },
     { path: '', redirectTo: '/inicio', pathMatch: 'full' }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -128,7 +134,7 @@ module.exports = "#divpadre{\n    width: 600px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header> </app-header>\n\n<!--<app-barraflotante></app-barraflotante>-->\n\n\n<div style=\"min-height: 70vh\" class=\"body\">    <!-- para posicionar el footer siempre abajo <div style=\"min-height: 70vh  del viewport>-->\n<router-outlet></router-outlet>\n</div>\n<!--\n<div id=\"divpadre\">\n        <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <a href=\"\"><img src=\"/assets/img/crowdfunding-620x350.jpg\" alt=\"\"></a>\n            <h5>{{post.title}}</h5>\n            <p>{{post.body}}</p>\n            </div>  \n        </div> -->\n<app-footer></app-footer>"
+module.exports = "<app-header> </app-header>\n\n<!--<app-barraflotante></app-barraflotante>-->\n\n<div style=\"min-height: 70vh\" class=\"body\">    <!-- para posicionar el footer siempre abajo <div style=\"min-height: 70vh  del viewport>-->\n<router-outlet></router-outlet>\n</div>\n<!--\n<div id=\"divpadre\">\n        <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <a href=\"\"><img src=\"/assets/img/crowdfunding-620x350.jpg\" alt=\"\"></a>\n            <h5>{{post.title}}</h5>\n            <p>{{post.body}}</p>\n            </div>  \n        </div> -->\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -143,7 +149,7 @@ module.exports = "<app-header> </app-header>\n\n<!--<app-barraflotante></app-bar
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/data.service */ "./src/app/services/data.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -172,7 +178,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
         }),
-        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
+        __metadata("design:paramtypes", [_services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -210,8 +216,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var angular_popper__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! angular-popper */ "./node_modules/angular-popper/fesm5/angular-popper.js");
 /* harmony import */ var _formulario_formulario_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./formulario/formulario.component */ "./src/app/formulario/formulario.component.ts");
 /* harmony import */ var _proyec_proyec_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./proyec/proyec.component */ "./src/app/proyec/proyec.component.ts");
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./services/data.service */ "./src/app/services/data.service.ts");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _employee_employee_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./employee/employee.component */ "./src/app/employee/employee.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -221,6 +228,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
  // <-- ngModel lives here 
+
 
 
 
@@ -258,7 +266,8 @@ var AppModule = /** @class */ (function () {
                 _login_login_component__WEBPACK_IMPORTED_MODULE_14__["LoginComponent"],
                 _barraflotante_barraflotante_component__WEBPACK_IMPORTED_MODULE_15__["BarraflotanteComponent"],
                 _formulario_formulario_component__WEBPACK_IMPORTED_MODULE_17__["FormularioComponent"],
-                _proyec_proyec_component__WEBPACK_IMPORTED_MODULE_18__["ProyecComponent"]
+                _proyec_proyec_component__WEBPACK_IMPORTED_MODULE_18__["ProyecComponent"],
+                _employee_employee_component__WEBPACK_IMPORTED_MODULE_21__["EmployeeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -267,7 +276,7 @@ var AppModule = /** @class */ (function () {
                 angular_popper__WEBPACK_IMPORTED_MODULE_16__["NgxPopper"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_20__["HttpClientModule"]
             ],
-            providers: [_data_service__WEBPACK_IMPORTED_MODULE_19__["DataService"]],
+            providers: [_services_data_service__WEBPACK_IMPORTED_MODULE_19__["DataService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
@@ -530,18 +539,41 @@ var CreaunacolectaComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/data.service.ts":
-/*!*********************************!*\
-  !*** ./src/app/data.service.ts ***!
-  \*********************************/
-/*! exports provided: DataService */
+/***/ "./src/app/employee/employee.component.css":
+/*!*************************************************!*\
+  !*** ./src/app/employee/employee.component.css ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/employee/employee.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/employee/employee.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<h3>Alta de proyectos</h3>\n\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col s5\">\n      <div class=\"card\">\n        <div class=\"card-content\">\n          <form #employeeForm=\"ngForm\" (ngSubmit)=\"addEmployee(employeeForm)\">\n            <input type=\"hidden\" name=\"_id\" #_id=\"ngModel\" [(ngModel)]=\"employeeService.selectedEmployee._id\">\n            <div class=\"row\">\n              <div class=\"input-field col-s12\">\n                <input type=\"text\" name=\"name\" #name=\"ngModel\" [(ngModel)]=\"employeeService.selectedEmployee.name\" placeholder=\"Ingresa Nombre\">\n              </div>\n              <div class=\"input-field col-s12\">\n                <input type=\"text\" name=\"position\" #name=\"ngModel\" [(ngModel)]=\"employeeService.selectedEmployee.position\" placeholder=\"Ingresa proyecto\">\n              </div>\n              <div class=\"input-field col-s12\">\n                <input type=\"text\" name=\"office\" #name=\"ngModel\" [(ngModel)]=\"employeeService.selectedEmployee.office\" placeholder=\"Ingresa Region\">\n              </div>\n              <div class=\"input-field col-s12\">\n                <input type=\"text\" name=\"salary\" #name=\"ngModel\" [(ngModel)]=\"employeeService.selectedEmployee.salary\" value=\"\" placeholder=\"Ingresa Monto a recaudar\">\n              </div>\n             \n              <div class=\"card-action\">\n                <div class=\"input-field col-s12\">\n                  <button class=\"btn right\" style=\"margin-left: 2px;\" (click)=\"resetForm(employeeForm)\">Limpiar</button>\n                  <button class=\"btn right\">Guardar</button>\n                </div>\n              </div>\n            </div>\n          </form>\n        </div>\n      </div>\n    </div>\n    <div class=\"col s7\">\n      <table class=\"striped highlight black-text\">\n        <thead>\n          <th>Nombre</th>\n          <th>Posicion</th>\n          <th>Region</th>\n          <th>Monto</th>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let employee of employeeService.employees\">\n            <td>{{ employee.name }}</td>\n            <td>{{ employee.position }}</td>\n            <td>{{ employee.office }}</td>\n            <td>{{ employee.salary}}</td>\n            <td>\n              <a (click)=\"editEmployee(employee)\">\n                <i class=\"material-icons\">Editar</i>\n              </a>\n              <a (click)=\"deleteEmployee(employee._id, employeeForm)\">\n                <i class=\"material-icons\">Eliminar</i>\n              </a>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/employee/employee.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/employee/employee.component.ts ***!
+  \************************************************/
+/*! exports provided: EmployeeComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeComponent", function() { return EmployeeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _services_employee_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/employee.service */ "./src/app/services/employee.service.ts");
+/* harmony import */ var _models_employee__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/employee */ "./src/app/models/employee.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -553,21 +585,71 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
-var DataService = /** @class */ (function () {
-    function DataService(httpclient) {
-        this.httpclient = httpclient;
-        console.log("console funcionando");
+
+var EmployeeComponent = /** @class */ (function () {
+    function EmployeeComponent(employeeService) {
+        this.employeeService = employeeService;
     }
-    DataService.prototype.getData = function () {
-        return this.httpclient.get('http://pepe.sytes.net:3000/personas');
+    EmployeeComponent.prototype.ngOnInit = function () {
+        this.getEmployees();
     };
-    DataService = __decorate([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
-            providedIn: 'root'
+    EmployeeComponent.prototype.addEmployee = function (form) {
+        var _this = this;
+        console.log(form.value);
+        if (form.value._id) {
+            this.employeeService.putEmployee(form.value)
+                .subscribe(function (res) {
+                _this.resetForm(form);
+                _this.getEmployees();
+                M.toast({ html: 'Updated Successfully' });
+            });
+        }
+        else {
+            this.employeeService.postEmployee(form.value)
+                .subscribe(function (res) {
+                _this.getEmployees();
+                _this.resetForm(form);
+                M.toast({ html: 'Save successfully' });
+            });
+        }
+    };
+    EmployeeComponent.prototype.getEmployees = function () {
+        var _this = this;
+        this.employeeService.getEmployees()
+            .subscribe(function (res) {
+            _this.employeeService.employees = res;
+        });
+    };
+    EmployeeComponent.prototype.editEmployee = function (employee) {
+        this.employeeService.selectedEmployee = employee;
+    };
+    EmployeeComponent.prototype.deleteEmployee = function (_id, form) {
+        var _this = this;
+        if (confirm('Are you sure you want to delete it?')) {
+            this.employeeService.deleteEmployee(_id)
+                .subscribe(function (res) {
+                _this.getEmployees();
+                _this.resetForm(form);
+                M.toast({ html: 'Deleted Succesfully' });
+            });
+        }
+    };
+    EmployeeComponent.prototype.resetForm = function (form) {
+        if (form) {
+            form.reset();
+            this.employeeService.selectedEmployee = new _models_employee__WEBPACK_IMPORTED_MODULE_2__["Employee"]();
+        }
+    };
+    EmployeeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-employee',
+            template: __webpack_require__(/*! ./employee.component.html */ "./src/app/employee/employee.component.html"),
+            styles: [__webpack_require__(/*! ./employee.component.css */ "./src/app/employee/employee.component.css")],
+            providers: [_services_employee_service__WEBPACK_IMPORTED_MODULE_1__["EmployeeService"]]
         }),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
-    ], DataService);
-    return DataService;
+        __metadata("design:paramtypes", [_services_employee_service__WEBPACK_IMPORTED_MODULE_1__["EmployeeService"]])
+    ], EmployeeComponent);
+    return EmployeeComponent;
 }());
 
 
@@ -719,7 +801,7 @@ module.exports = "*{\n\tpadding:0;\n\t/*margin:0;*/\n\tbox-sizing: border-box;\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<header>\n  <div class=\"menu_bar\">\n      <a class=\"bt-menu\"><span><img src=\"/assets/img/icon/menu.svg\" alt=\"\"></span>Menú</a>\n      </div>\n\n      <nav>\n<ul>\n  <li><a routerLink=\"inicio\"><span><img src=\"/assets/img/icon/home.svg\" alt=\"\"></span>Inicio</a></li>\n  <li class=\"submenu\">\n  <a routerLink=\"proyectos\"><span class=\"\"><img src=\"/assets/img/icon/make.svg\" alt=\"\"></span>Proyectos</a>\n  <ul class=\"children\">\n      <li><a routerLink=\"#\">Proyecto #1<span class=\"icon-dot\"></span></a></li>\n      <li><a routerLink=\"#\">Proyecto #2<span class=\"icon-dot\"></span></a></li>\n      <li><a routerLink=\"#\">Proyecto #3<span class=\"icon-dot\"></span></a></li>\n    </ul>\n  </li>\n  <li><a routerLink=\"creaunacolecta\"><span class=\"icon-rocket\"><img src=\"/assets/img/icon/coin-dollar.svg\" alt=\"\"></span>Crea una colecta</a></li>\n  <li><a routerLink=\"comodonar\"><span class=\"icon-dot\"><img src=\"/assets/img/icon/credit-card.svg\" alt=\"\"></span>Como donar</a></li>\n    <li><a routerLink=\"quienessomos\"><span class=\"icon-dot\"><img src=\"/assets/img/icon/man-woman.svg\" alt=\"\"></span>Quienes somos</a></li>\n     <!-- <li><a routerLink=\"contacto\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/mail.svg\" alt=\"\"></span>Contacto</a></li>-->\n      <li><a routerLink=\"registro\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/key.svg\" alt=\"\"></span>Registro</a></li>\n      <li><a routerLink=\"login\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/enter.svg\" alt=\"\"></span>Login</a></li>\n         \n</ul>\n\n\n</nav>\n\n\n</header>"
+module.exports = "\n<header>\n  <div class=\"menu_bar\">\n      <a class=\"bt-menu\"><span><img src=\"/assets/img/icon/menu.svg\" alt=\"\"></span>Menú</a>\n      </div>\n\n      <nav>\n<ul>\n  <li><a routerLink=\"inicio\"><span><img src=\"/assets/img/icon/home.svg\" alt=\"\"></span>Inicio</a></li>\n  <li class=\"submenu\">\n  <a routerLink=\"proyectos\"><span class=\"\"><img src=\"/assets/img/icon/make.svg\" alt=\"\"></span>Proyectos</a>\n  <ul class=\"children\">\n      <li><a routerLink=\"#\">Proyecto #1<span class=\"icon-dot\"></span></a></li>\n      <li><a routerLink=\"#\">Proyecto #2<span class=\"icon-dot\"></span></a></li>\n      <li><a routerLink=\"#\">Proyecto #3<span class=\"icon-dot\"></span></a></li>\n    </ul>\n  </li>\n  <li><a routerLink=\"creaunacolecta\"><span class=\"icon-rocket\"><img src=\"/assets/img/icon/coin-dollar.svg\" alt=\"\"></span>Crea una colecta</a></li>\n  <li><a routerLink=\"comodonar\"><span class=\"icon-dot\"><img src=\"/assets/img/icon/credit-card.svg\" alt=\"\"></span>Como donar</a></li>\n    <li><a routerLink=\"quienessomos\"><span class=\"icon-dot\"><img src=\"/assets/img/icon/man-woman.svg\" alt=\"\"></span>Quienes somos</a></li>\n     <!-- <li><a routerLink=\"contacto\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/mail.svg\" alt=\"\"></span>Contacto</a></li>-->\n      <li><a routerLink=\"registro\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/key.svg\" alt=\"\"></span>Registro</a></li>\n      <li><a routerLink=\"login\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/enter.svg\" alt=\"\"></span>Login</a></li>\n      <li><a routerLink=\"employee\"><span class=\"icon-mail\"><img src=\"/assets/img/icon/enter.svg\" alt=\"\"></span>altas</a></li> \n</ul>\n\n\n</nav>\n\n\n</header>"
 
 /***/ }),
 
@@ -920,6 +1002,36 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/models/employee.ts":
+/*!************************************!*\
+  !*** ./src/app/models/employee.ts ***!
+  \************************************/
+/*! exports provided: Employee */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Employee", function() { return Employee; });
+var Employee = /** @class */ (function () {
+    function Employee(_id, name, position, office, salary) {
+        if (_id === void 0) { _id = ''; }
+        if (name === void 0) { name = ''; }
+        if (position === void 0) { position = ''; }
+        if (office === void 0) { office = ''; }
+        if (salary === void 0) { salary = 0; }
+        this._id = _id;
+        this.name = name;
+        this.position = position;
+        this.office = office;
+        this.salary = salary;
+    }
+    return Employee;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/proyec/proyec.component.css":
 /*!*********************************************!*\
   !*** ./src/app/proyec/proyec.component.css ***!
@@ -1001,7 +1113,7 @@ module.exports = "#divpadre{\n    width: 800px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n        <p>{{post.body}}</p>\n        <a href={{post.poyectoid}}>Quiero donar</a>\n        </div>  \n    </div>\n  "
+module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n       <a href=\"\">Monto Recaudado<p>${{post.salary}}</p></a>\n        <a href=\"{{post.poyectoid}}\">Quiero donar</a>\n        </div>  \n    </div>\n  "
 
 /***/ }),
 
@@ -1016,7 +1128,7 @@ module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProyectosComponent", function() { return ProyectosComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _services_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../services/data.service */ "./src/app/services/data.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1046,7 +1158,7 @@ var ProyectosComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./proyectos.component.html */ "./src/app/proyectos/proyectos.component.html"),
             styles: [__webpack_require__(/*! ./proyectos.component.css */ "./src/app/proyectos/proyectos.component.css")]
         }),
-        __metadata("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
+        __metadata("design:paramtypes", [_services_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])
     ], ProyectosComponent);
     return ProyectosComponent;
 }());
@@ -1175,6 +1287,106 @@ var RegistroComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], RegistroComponent);
     return RegistroComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/data.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/data.service.ts ***!
+  \******************************************/
+/*! exports provided: DataService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DataService = /** @class */ (function () {
+    function DataService(httpclient) {
+        this.httpclient = httpclient;
+        console.log("console funcionando");
+    }
+    DataService.prototype.getData = function () {
+        return this.httpclient.get('http://pepe.sytes.net:3000/proyectos');
+    };
+    DataService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], DataService);
+    return DataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/employee.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/employee.service.ts ***!
+  \**********************************************/
+/*! exports provided: EmployeeService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EmployeeService", function() { return EmployeeService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _models_employee__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../models/employee */ "./src/app/models/employee.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var EmployeeService = /** @class */ (function () {
+    function EmployeeService(http) {
+        this.http = http;
+        this.URL_API = 'http://pepe.sytes.net:3000/proyectos';
+        this.selectedEmployee = new _models_employee__WEBPACK_IMPORTED_MODULE_2__["Employee"]();
+    }
+    EmployeeService.prototype.postEmployee = function (employee) {
+        return this.http.post(this.URL_API, employee);
+    };
+    EmployeeService.prototype.getEmployees = function () {
+        return this.http.get(this.URL_API);
+    };
+    EmployeeService.prototype.putEmployee = function (employee) {
+        return this.http.put(this.URL_API + ("/" + employee._id), employee);
+    };
+    EmployeeService.prototype.deleteEmployee = function (_id) {
+        return this.http.delete(this.URL_API + ("/" + _id));
+    };
+    EmployeeService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], EmployeeService);
+    return EmployeeService;
 }());
 
 
