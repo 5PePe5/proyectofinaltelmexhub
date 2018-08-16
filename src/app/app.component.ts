@@ -3,7 +3,7 @@ import {
 } from '@angular/core';
 import {
   DataService
-} from './data.service';
+} from './services/data.service';
 
 
 @Component({

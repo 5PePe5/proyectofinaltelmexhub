@@ -17,7 +17,7 @@ import { BarraflotanteComponent } from './barraflotante/barraflotante.component'
 import { NgxPopper } from 'angular-popper';
 import { FormularioComponent } from './formulario/formulario.component';
 import { ProyecComponent } from './proyec/proyec.component';
-import {DataService}from './data.service';
+import {DataService}from './services/data.service';
 import {HttpClientModule} from '@angular/common/http';
 import { EmployeeComponent } from './employee/employee.component';
 
