@@ -1113,7 +1113,7 @@ module.exports = "#divpadre{\n    width: 800px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n       <a href=\"\">Monto Recaudado<p>${{post.salary}}</p></a>\n        <a href=\"{{post.poyectoid}}\">Quiero donar</a>\n        </div>  \n    </div>\n  "
+module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n       <a href=\"\">Monto Recaudado<p>$ {{post.salary}}</p></a>\n        <a href=\"{{post.poyectoid}}\">Quiero donar</a>\n        </div>  \n    </div>\n  "
 
 /***/ }),
 
@@ -1322,7 +1322,7 @@ var DataService = /** @class */ (function () {
         console.log("console funcionando");
     }
     DataService.prototype.getData = function () {
-        return this.httpclient.get('http://pepe.sytes.net:3000/proyectos');
+        return this.httpclient.get('http://pepe.sytes.net:3000/personas');
     };
     DataService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1365,7 +1365,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var EmployeeService = /** @class */ (function () {
     function EmployeeService(http) {
         this.http = http;
-        this.URL_API = 'http://pepe.sytes.net:3000/proyectos';
+        this.URL_API = 'http://pepe.sytes.net:3000/personas';
         this.selectedEmployee = new _models_employee__WEBPACK_IMPORTED_MODULE_2__["Employee"]();
     }
     EmployeeService.prototype.postEmployee = function (employee) {
