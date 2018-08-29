@@ -11,7 +11,7 @@ export class EmployeeService {
   selectedEmployee: Employee;
   employees: Employee[];
   
-  readonly URL_API = 'http://localhost:3000/proyectos';
+  readonly URL_API = 'http://pepe.sytes.net:3000/proyectos';
 
   constructor(private http: HttpClient) {
     this.selectedEmployee = new Employee();

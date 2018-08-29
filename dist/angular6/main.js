@@ -1322,7 +1322,7 @@ var DataService = /** @class */ (function () {
         console.log("console funcionando");
     }
     DataService.prototype.getData = function () {
-        return this.httpclient.get('http://localhost:3000/proyectos');
+        return this.httpclient.get('http://pepe.sytes.net:3000/proyectos');
     };
     DataService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1365,7 +1365,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var EmployeeService = /** @class */ (function () {
     function EmployeeService(http) {
         this.http = http;
-        this.URL_API = 'http://localhost:3000/proyectos';
+        this.URL_API = 'http://pepe.sytes.net:3000/proyectos';
         this.selectedEmployee = new _models_employee__WEBPACK_IMPORTED_MODULE_2__["Employee"]();
     }
     EmployeeService.prototype.postEmployee = function (employee) {
