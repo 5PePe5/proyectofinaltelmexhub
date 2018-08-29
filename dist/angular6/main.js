@@ -123,7 +123,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#divpadre{\n    width: 600px;\n    margin: auto;\n    display: -ms-grid;\n    display: grid;\n    -ms-grid-columns:  1fr 1fr;\n        grid-template-columns:  1fr 1fr;\n\n/*border: 3px solid rgb(173, 12, 47); */\nbackground-color: rgb(255, 255, 255);\ngap: 10px;\n\n}\n\n#divhijos{\n    padding: 3px 10px;\n    border: rgb(189, 230, 176) 5px solid;\n    border-top-left-radius: 20px;\n    border-bottom-right-radius: 20px;\n  \n    \n\n\n}\n\nimg{\nwidth: 100px;\nheight: 50px;\nborder-radius: 30px;\n\n}\n\n@media screen and (max-width: 700px) {\n\n    #divpadrecarousel{\n        width: 350px;\n        margin: auto;\n        \n        }\n\n    #divpadre{\n        margin: auto;\n        display: -ms-grid;\n        display: grid;\n        -ms-grid-columns: 1fr;\n            grid-template-columns: 1fr;\n        width: 100%;\n        height: 100%;\n    background-color: rgb(255, 255, 255);\n    }\n    \n    }\n    "
+module.exports = "#divpadre{\n    width: 600px;\n    margin: auto;\n    display: -ms-grid;\n    display: grid;\n    -ms-grid-columns:  1fr 1fr;\n        grid-template-columns:  1fr 1fr;\n\n/*border: 3px solid rgb(173, 12, 47); */\nbackground-color: rgb(255, 255, 255);\ngap: 10px;\n\n}\n\n#divhijos{\n    padding: 3px 10px;\n    border: rgb(189, 230, 176) 5px solid;\n    border-top-left-radius: 20px;\n    border-bottom-right-radius: 20px;\n  \n    \n\n\n}\n\nimg{\nwidth: 100px;\nheight: 50px;\nborder-radius: 30px;\n\n}\n\n@media screen and (max-width: 700px) {\n\n    #divpadrecarousel{\n        width: 350px;\n        margin: auto;\n        \n        }\n\n    #divpadre{\n        margin: auto;\n        display: -ms-grid;\n        display: grid;\n        -ms-grid-columns: 1fr;\n            grid-template-columns: 1fr;\n        width: 100%;\n        height: 100%;\n    background-color: rgb(255, 255, 255);\n    }\n    \n    }\n\n@media screen and (max-width: 500px){\n\n        \n    }\n    "
 
 /***/ }),
 
@@ -134,7 +134,7 @@ module.exports = "#divpadre{\n    width: 600px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-header> </app-header>\n\n<!--<app-barraflotante></app-barraflotante>-->\n\n<div style=\"min-height: 70vh\" class=\"body\">    <!-- para posicionar el footer siempre abajo <div style=\"min-height: 70vh  del viewport>-->\n<router-outlet></router-outlet>\n</div>\n<!--\n<div id=\"divpadre\">\n        <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <a href=\"\"><img src=\"/assets/img/crowdfunding-620x350.jpg\" alt=\"\"></a>\n            <h5>{{post.title}}</h5>\n            <p>{{post.body}}</p>\n            </div>  \n        </div> -->\n<app-footer></app-footer>"
+module.exports = "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.2.0/css/all.css\" integrity=\"sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ\" crossorigin=\"anonymous\">\n<app-header> </app-header>\n\n<!--<app-barraflotante></app-barraflotante>-->\n\n<div style=\"min-height: 70vh\" class=\"body\">    <!-- para posicionar el footer siempre abajo <div style=\"min-height: 70vh  del viewport>-->\n<router-outlet></router-outlet>\n</div>\n<!--\n<div id=\"divpadre\">\n        <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <a href=\"\"><img src=\"/assets/img/crowdfunding-620x350.jpg\" alt=\"\"></a>\n            <h5>{{post.title}}</h5>\n            <p>{{post.body}}</p>\n            </div>  \n        </div> -->\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -1113,7 +1113,7 @@ module.exports = "#divpadre{\n    width: 800px;\n    margin: auto;\n    display:
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n       <a href=\"\">Monto Recaudado<p>$ {{post.salary}}</p></a>\n        <a href=\"{{post.poyectoid}}\">Quiero donar</a>\n        </div>  \n    </div>\n  "
+module.exports = "\n<p>\n  proyectos works!nnnnnnnnnnnnnnnnnnnnnnnnnnnn\n</p>\n\n<div id=\"divpadre\">\n    <div  *ngFor=\"let post of posts\" id=\"divhijos\">\n            <h5>{{post.name}}</h5>\n        <a href=\"\"><img src=\"https://picsum.photos/200\" alt=\"\"></a>\n        \n       <a href=\"\">Monto Recaudado<p>$ {{post.salary}}</p></a>\n        <a href=\"\">{{post.poyectoid}} Quiero donar</a>\n        </div>  \n    </div>\n  "
 
 /***/ }),
 
@@ -1322,7 +1322,7 @@ var DataService = /** @class */ (function () {
         console.log("console funcionando");
     }
     DataService.prototype.getData = function () {
-        return this.httpclient.get('http://pepe.sytes.net:3000/personas');
+        return this.httpclient.get('http://localhost:3000/proyectos');
     };
     DataService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1365,7 +1365,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var EmployeeService = /** @class */ (function () {
     function EmployeeService(http) {
         this.http = http;
-        this.URL_API = 'http://pepe.sytes.net:3000/personas';
+        this.URL_API = 'http://localhost:3000/proyectos';
         this.selectedEmployee = new _models_employee__WEBPACK_IMPORTED_MODULE_2__["Employee"]();
     }
     EmployeeService.prototype.postEmployee = function (employee) {
@@ -1453,7 +1453,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/telmexhub/proyectofinaltelmexhub/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/compuaztec/proyectofinaltelmexhub/src/main.ts */"./src/main.ts");
 
 
 /***/ })
